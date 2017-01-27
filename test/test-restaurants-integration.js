@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 // this makes the should syntax available throughout
 // this module
 const should = chai.should();
-
+console.log('Hi');
 const {Restaurant} = require('../models');
 const {app, runServer, closeServer} = require('../server');
 const {TEST_DATABASE_URL} = require('../config');
