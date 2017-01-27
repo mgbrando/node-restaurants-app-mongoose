@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: jCR8b3Xa2vL0U53VlDFwE1Hpl87jDX26VzldnHVyu5VqNutD31+clC5aL2SzI+Chf88xkF6knSGYTXZL7/DGWPokDfrM8Pznj+p+ay3ayq4+5jBce39i7U7GTv8Oa0utHLjeSgWfIzg8TY61jCxNoqrAmnZgLD4mzG/VNK8G/13mDKE5sZ4iO20UltGaVFnWdOPI3gMUDcQvYPkp4QTLuvdDhnQPmAGq2I32Zxqo/LcJzVlo4e9EiYIpf/O4pj5VDEEd1MveDpsJqc25w0laKxXXLr8kpjcegtYXFYJ0Cs+DYopqmLZDrskTzmiDKhlvEnEtKXINxj2mcwbeA6kq/AHgJ6S+7VuIvNRDkpmtHdmI0TdN5wHTR6cBmihghklLbNwmPIzp0LRHnAOrivmS1YQocRiUscf0B6N49+uiNOqLSn/qkf34ezfMy2gFp7V4XDa5jreFyxgzA3Gs2tjrCoYFqoLvJ/uuJL6oHMA8Fm80qqIWlrBM45drygSskkqSdCteYp9x9OLF8lwW98To60bygA6h4qeyDbNDtEVsZJp8G6UWwLKP7kiqhm8JacSnieh61/IFqKwhIkhK403U+uyuDnvySpHN9k8W8t4Slz0uMzioGjPSViMADtcR0b9bX76c5D/Jd2RDBjwD+dR8AL2IjORfrgwMX2NqTvy3E8A=
+  app: polar-hollows-95399
+  on:
+    repo: mgbrando/node-restaurants-app-mongoose
+    branch: feature/with-tests
